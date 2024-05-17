@@ -9,15 +9,15 @@ class Program
         int quantityOfNumber = 0;
         int minNumber = 10;
         int maxNumber = 25;
-        Random rand = new Random();
+        Random random = new Random();
 
-        number = rand.Next(minNumber, maxNumber + 1);
+        number = random.Next(minNumber, maxNumber + 1);
         Console.WriteLine("Число " + number);
         Console.WriteLine();
 
         for (int i = 0; i <= stopNumber; i += number)
         {
-            if (i >= startNumber && i <= stopNumber)
+            if (i >= startNumber)
             {
                 quantityOfNumber++;
                 Console.WriteLine("Кратное число " + i);
